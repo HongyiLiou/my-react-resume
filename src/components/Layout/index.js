@@ -8,10 +8,8 @@ const Layout = () => {
 
   return (
     <article className="layoutContainer">
-      <div className="container">
-        <Header theme={theme} />
-        <Content theme={theme} />
-      </div>
+      <Header theme={theme} />
+      <Content theme={theme} />
     </article>
   );
 }

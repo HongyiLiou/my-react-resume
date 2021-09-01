@@ -35,6 +35,7 @@
   font-size: 120%;
   cursor: pointer;
   color: #443163;
+  overflow: hidden;
   transition: 0.1s;
 }
 .sidebarContainer .navItem:hover,
@@ -87,6 +88,11 @@
 .sidebarContainer .navItem.works::before {
   content: '\f109';
   font-size: 125%;
+  padding-left: 1px;
+}
+.sidebarContainer .navItem.resume::before {
+  content: '\f2c2';
+  font-size: 115%;
   padding-left: 1px;
 }
 .sidebarContainer .navItemDetail {

@@ -1,0 +1,11 @@
+.contentContainer {
+  position: relative;
+  height: 200px;
+  background: #fffdfd;
+  transition: 0.2s;
+}
+
+/* Dark Theme */
+.contentContainer.dark {
+  background: #5f5d5d;
+}

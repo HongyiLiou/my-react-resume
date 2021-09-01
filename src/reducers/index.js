@@ -2,10 +2,12 @@ import { createStore } from "redux";
 
 const CHANGE_THEME = 'CHANGE_THEME';
 const CHANGE_SIDEBAR_TYPE = 'CHANGE_SIDEBAR_TYPE';
+const UPLOAD_REFS = 'UPLOAD_REFS';
 
 const initState = {
   theme: 'light',
   sidebar: 'outer',
+  refs: [],
 };
 
 const reducer = (state = initState, action) => {
@@ -19,6 +21,11 @@ const reducer = (state = initState, action) => {
       const sidebar = action.payload.sidebar;
       state = Object.assign(state, { sidebar });
       console.log('state', state);
+      return state;
+
+    case UPLOAD_REFS:
+      const ref = action.payload.ref;
+      state = state.refs.indexOf(ref) === -1 ? Object.assign(state, state.refs.push(ref)) : state;
       return state;
 
     default:
@@ -48,6 +55,20 @@ export function changeSidebarType(type) {
     type: CHANGE_SIDEBAR_TYPE,
     payload: {
       type,
+    },
+  };
+}
+
+/**
+ * 儲存頁面區塊
+ * @param {Any} ref 區塊Ref
+ * @returns 
+ */
+export function uploadRefs(ref) {
+  return {
+    type: UPLOAD_REFS,
+    payload: {
+      ref,
     },
   };
 }

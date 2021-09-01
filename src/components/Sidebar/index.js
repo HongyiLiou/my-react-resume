@@ -14,7 +14,6 @@ const Sidebar = () => {
     { active: false, title: '關於我', content: '自傳、興趣延伸', icon: 'about' },
     { active: false, title: '專業經驗', content: '專業學習、平面設計、網頁前端相關經驗', icon: 'autobiography' },
     { active: false, title: '作品', content: 'Web前端作品展示', icon: 'works' },
-    { active: false, title: '紙本履歷', icon: 'works' },
   ];
   const [stateNavItems, setNavItems] = useState(navItems);
   const setNavActive = (index) => {
@@ -41,6 +40,15 @@ const Sidebar = () => {
             );
           })
         }
+        <li className="navItem resume">
+          紙本履歷
+          <a
+            style={{ position: 'absolute', top: 0, left: 0, bottom: 0, right: 0 }}
+            href="https://drive.google.com/uc?export=view&id=1ItBKh2xqbQ_vnRbOaJvsvGyAqZpgMfMa"
+            target="_blank"
+            rel="noreferrer"
+          />
+        </li>
       </ul>
       <div style={{ position: 'absolute', bottom: '0' }}>
         <span>Theme: </span>

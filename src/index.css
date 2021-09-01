@@ -64,6 +64,9 @@ input, button {
   border: none;
   outline: none;
 }
+button {
+  cursor: pointer;
+}
 
 html, body {
   margin: 0;
