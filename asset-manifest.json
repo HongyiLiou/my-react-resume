@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/my-react-resume/static/css/main.f5826571.chunk.css",
-    "main.js": "/my-react-resume/static/js/main.b91358cf.chunk.js",
-    "main.js.map": "/my-react-resume/static/js/main.b91358cf.chunk.js.map",
-    "runtime-main.js": "/my-react-resume/static/js/runtime-main.c6b912d9.js",
-    "runtime-main.js.map": "/my-react-resume/static/js/runtime-main.c6b912d9.js.map",
-    "static/js/2.8a1fb042.chunk.js": "/my-react-resume/static/js/2.8a1fb042.chunk.js",
-    "static/js/2.8a1fb042.chunk.js.map": "/my-react-resume/static/js/2.8a1fb042.chunk.js.map",
-    "static/js/3.eeeea602.chunk.js": "/my-react-resume/static/js/3.eeeea602.chunk.js",
-    "static/js/3.eeeea602.chunk.js.map": "/my-react-resume/static/js/3.eeeea602.chunk.js.map",
+    "main.css": "/my-react-resume/static/css/main.6c90e7a5.chunk.css",
+    "main.js": "/my-react-resume/static/js/main.db5c27c6.chunk.js",
+    "main.js.map": "/my-react-resume/static/js/main.db5c27c6.chunk.js.map",
+    "runtime-main.js": "/my-react-resume/static/js/runtime-main.d9115169.js",
+    "runtime-main.js.map": "/my-react-resume/static/js/runtime-main.d9115169.js.map",
+    "static/js/2.03f4b4d2.chunk.js": "/my-react-resume/static/js/2.03f4b4d2.chunk.js",
+    "static/js/2.03f4b4d2.chunk.js.map": "/my-react-resume/static/js/2.03f4b4d2.chunk.js.map",
+    "static/js/3.ab9cecb3.chunk.js": "/my-react-resume/static/js/3.ab9cecb3.chunk.js",
+    "static/js/3.ab9cecb3.chunk.js.map": "/my-react-resume/static/js/3.ab9cecb3.chunk.js.map",
     "index.html": "/my-react-resume/index.html",
-    "static/css/main.f5826571.chunk.css.map": "/my-react-resume/static/css/main.f5826571.chunk.css.map",
-    "static/js/2.8a1fb042.chunk.js.LICENSE.txt": "/my-react-resume/static/js/2.8a1fb042.chunk.js.LICENSE.txt"
+    "static/css/main.6c90e7a5.chunk.css.map": "/my-react-resume/static/css/main.6c90e7a5.chunk.css.map",
+    "static/js/2.03f4b4d2.chunk.js.LICENSE.txt": "/my-react-resume/static/js/2.03f4b4d2.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/my-react-resume/static/media/me.4bd586e0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c6b912d9.js",
-    "static/js/2.8a1fb042.chunk.js",
-    "static/css/main.f5826571.chunk.css",
-    "static/js/main.b91358cf.chunk.js"
+    "static/js/runtime-main.d9115169.js",
+    "static/js/2.03f4b4d2.chunk.js",
+    "static/css/main.6c90e7a5.chunk.css",
+    "static/js/main.db5c27c6.chunk.js"
   ]
 }
