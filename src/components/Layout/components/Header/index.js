@@ -54,6 +54,14 @@ const Header = (props) => {
             看看
           </button>
         </div>
+        <div className="summary">
+          <p>三年實務經驗的前端工程師，熱愛音樂、影像視覺，樂於學習新技術。</p>
+          <p>喜歡一點一滴累積完成一首曲子、一幅影像、一個網頁的成就感。</p>
+          <p>
+            好溝通、善於配合。
+          </p>
+        </div>
+        <article className="titleBackground">Basic Info</article>
       </div>
     </header>
   );

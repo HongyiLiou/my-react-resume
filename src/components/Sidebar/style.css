@@ -4,7 +4,7 @@
   height: calc(100vh - 20px);
   top: 10px;
   left: 10px;
-  padding: 15px;
+  padding: 0 15px 15px 15px;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 0 2px 5px rgba(59, 52, 52, 0.5);
@@ -12,12 +12,13 @@
 }
 .sidebarContainer .header {
   /* font-family: 微軟正黑體; */
-  padding-bottom: 15px;
+  height: 60px;
   font-size: 180%;
   font-weight: 500;
   color: #555;
   text-align: left;
   border-bottom: 2px solid #b8b8b8;
+  line-height: 60px;
   transition: 0.2s;
 }
 .sidebarContainer .navList {
@@ -102,7 +103,7 @@
   word-break: keep-all;
   overflow: hidden;
   opacity: 0;
-  transition: opacity 0.2s 0.3s, margin-top 0.2s 0.3s, max-height 0.2s 0.3s;
+  transition: opacity 0.2s 0.4s, margin-top 0.2s 0.4s, max-height 0.2s 0.4s;
 }
 
 /* Dark Theme */
