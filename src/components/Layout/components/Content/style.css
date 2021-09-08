@@ -1,8 +1,67 @@
 .contentContainer {
   position: relative;
-  height: 200px;
+  padding: 150px 0;
+  /* height: 200px; */
   background: #fffdfd;
   transition: 0.2s;
+}
+.contentContainer .titleBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contentContainer .title {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 200%;
+}
+.contentContainer .title::before,
+.contentContainer .title::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  bottom: -5px;
+  background: #554b63;
+}
+.contentContainer .title::before {
+  transform: translateX(calc(-100% - 50px));
+}
+.contentContainer .title::after {
+  transform: translateX(calc(0% + 50px));
+}
+.contentContainer .subtitle {
+  font-size: 150%;
+  font-style: italic;
+}
+.contentContainer .title,
+.contentContainer .subtitle {
+  color: #554b63;
+  letter-spacing: 1px;
+}
+.contentContainer .timelineBlock {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+}
+.contentContainer .timeline {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 0 0 80px;
+}
+.contentContainer .timeline .item {
+  position: relative;
+  font-size: 150%;
+  color: #554b63;
+}
+.contentContainer .timeline .item::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #554b63;
+  top: 7px;
+  left: -50px
 }
 
 /* Dark Theme */

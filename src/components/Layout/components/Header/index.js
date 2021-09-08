@@ -49,7 +49,7 @@ const Header = (props) => {
           </div>
           <button
             style={{ position: 'absolute', right: '20px' }}
-            onClick={() => { console.log('getBoundingClientRect', refs[1].current.getBoundingClientRect()); }}
+            onClick={() => { console.log('getBoundingClientRect', refs); }}
           >
             看看
           </button>
