@@ -81,11 +81,27 @@
   align-items: center;
   background: #ffffff;
   border-radius: 8px;
+  /* border-radius: 50%; */
   cursor: pointer;
   transition: 0.2s;
 }
 .headerContainer .links li:hover {
   background: #554b63;
+}
+.headerContainer .links .github:hover {
+  background: #807294;
+}
+.headerContainer .links .codepen:hover {
+  background: #999;
+}
+.headerContainer .links .facebook:hover {
+  background: #8097ff;
+}
+.headerContainer .links .instagram:hover {
+  background: #ff94c6;
+}
+.headerContainer .links .youtube:hover {
+  background: #f58383;
 }
 .headerContainer .links li:hover::before {
   color: #ffffff;
@@ -99,18 +115,23 @@
 .headerContainer .links .github::before {
   content: '\f09b';
   font-size: 230%;
+  color: #807294;
 }
 .headerContainer .links .codepen::before {
   content: '\f1cb';
+  color: #999;
 }
 .headerContainer .links .facebook::before {
   content: '\f082';
+  color: #8097ff;
 }
 .headerContainer .links .instagram::before {
   content: '\f16d';
+  color: #ff94c6;
 }
 .headerContainer .links .youtube::before {
   content: '\f16a';
+  color: #f58383;
 }
 .headerContainer .links a {
   position: absolute;
