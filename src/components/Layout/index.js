@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import Header from './components/Header';
-import Content from './components/Content';
+import Experience from './components/Experience';
+import Skills from './components/Skills';
 import './style.css';
 
 const Layout = () => {
@@ -9,7 +10,8 @@ const Layout = () => {
   return (
     <article className="layoutContainer">
       <Header theme={theme} />
-      <Content theme={theme} />
+      <Experience theme={theme} />
+      <Skills theme={theme} />
     </article>
   );
 }

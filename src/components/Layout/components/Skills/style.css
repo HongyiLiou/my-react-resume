@@ -1,0 +1,199 @@
+.skillsContainer {
+  position: relative;
+  padding: 200px 0 150px 0;
+  background: #fffdfd;
+  /* background: linear-gradient(150deg, #e7daff, #fffdfd 30%); */
+  overflow: hidden;
+  transition: 0.2s;
+}
+.skillsContainer .background {
+  position: absolute;
+  width: 150vw;
+  height: 100%;
+  left: 0;
+  bottom: calc(100% - 150px);
+  background: #ecf6ff;
+  transform-origin: bottom center;
+  transform: rotate(10deg);
+  transition: 0.2s;
+  z-index: 0;
+}
+.skillsContainer .background2 {
+  position: absolute;
+  width: 150vw;
+  height: 100%;
+  right: 0;
+  bottom: calc(100% - 0px);
+  background: #ffeaea;
+  transform-origin: top right;
+  transform: rotate(-8deg);
+  transition: 0.2s;
+  z-index: 0;
+}
+.skillsContainer .titleBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skillsContainer .title {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 200%;
+}
+.skillsContainer .title::before,
+.skillsContainer .title::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  bottom: -5px;
+  background: #554b63;
+}
+.skillsContainer .title::before {
+  transform: translateX(calc(-100% - 50px));
+}
+.skillsContainer .title::after {
+  transform: translateX(calc(0% + 50px));
+}
+.skillsContainer .subtitle {
+  font-size: 150%;
+  font-style: italic;
+}
+.skillsContainer .title,
+.skillsContainer .subtitle {
+  color: #554b63;
+  letter-spacing: 1px;
+}
+.skillsContainer .skillBlock {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+}
+.skillsContainer .skills {
+  display: flex;
+  width: 100%;
+  max-width: 1080px;
+  justify-content: space-between;
+}
+.skillsContainer .skillItem {
+  position: relative;
+  display: flex;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  transform-origin: center center;
+}
+.skillsContainer .skillItem::before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: 0.2s;
+  transform-origin: center center;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.skillsContainer .skillItem:nth-child(1) {
+  background: #ffaeae;
+}
+.skillsContainer .skillItem:nth-child(2) {
+  background: #ffd6a1;
+}
+.skillsContainer .skillItem:nth-child(3) {
+  background: #afd4a6;
+}
+.skillsContainer .skillItem:nth-child(4) {
+  background: #8ec9d3;
+}
+.skillsContainer .skillItem:nth-child(5) {
+  background: #b1b1dd;
+}
+.skillsContainer .skillItem:nth-child(1)::before {
+  border: solid 2px #ffaeae;
+}
+.skillsContainer .skillItem:nth-child(2)::before {
+  border: solid 2px #ffd6a1;
+}
+.skillsContainer .skillItem:nth-child(3)::before {
+  border: solid 2px #afd4a6;
+}
+.skillsContainer .skillItem:nth-child(4)::before {
+  border: solid 2px #8ec9d3;
+}
+.skillsContainer .skillItem:nth-child(5)::before {
+  border: solid 2px #b1b1dd;
+}
+.skillsContainer .skillItem:nth-child(1) .skillContent {
+  color: #640101;
+}
+.skillsContainer .skillItem:nth-child(2) .skillContent {
+  color: #814a01;
+}
+.skillsContainer .skillItem:nth-child(3) .skillContent {
+  color: #125502;
+}
+.skillsContainer .skillItem:nth-child(4) .skillContent {
+  color: #004a57;
+}
+.skillsContainer .skillItem:nth-child(5) .skillContent {
+  color: #000063;
+}
+.skillsContainer .skillItem:hover {
+  transform: scale(1.1);
+}
+.skillsContainer .skillItem:hover::before {
+  transform: scale(1.4) translate(-35.8%, -35.8%);
+}
+.skillsContainer .skillItem .skillName {
+  font-size: 200%;
+  font-weight: 900;
+  font-family: 微軟正黑體;
+  color: #FFF;
+}
+.skillsContainer .skillItem .skillContent {
+  margin-top: 10px;
+  font-size: 120%;
+  font-weight: 900;
+}
+.skillsContainer .toolBlock {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+}
+.skillsContainer .tools {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  justify-content: space-between;
+}
+.skillsContainer .tools section {
+  width: 33%;
+}
+.skillsContainer .toolType {
+  margin: 0 20px 15px 20px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 200%;
+  color: #554b63;
+  border-bottom: solid 5px #ebe9ec;
+}
+.skillsContainer .toolName {
+  padding: 0 40px;
+  font-size: 130%;
+  margin-bottom: 10px;
+  color: #554b63;
+}
+
+/* Dark Theme */
+.skillsContainer.dark {
+  background: #5f5d5d;
+}

@@ -3,9 +3,9 @@ import { useDispatch } from 'react-redux';
 import { uploadRefs } from '../../../../reducers';
 import './style.css';
 
-const Content = (props) => {
+const Experience = (props) => {
   const { theme } = props;
-  const contentClass = theme === 'light' ? 'contentContainer' : 'contentContainer dark';
+  const experienceClass = theme === 'light' ? 'experienceContainer' : 'experienceContainer dark';
   const experience = useRef();
   const disPatch = useDispatch();
   disPatch(uploadRefs(experience));
@@ -13,7 +13,7 @@ const Content = (props) => {
     {
       name: 'Mayo鼎恒數位科技',
       unit: '薪酬及招募產品發展部　前端工程師',
-      works: '(使用 React 前端框架，開發UI/功能元件，串接後端API，依照規格書開發產品)',
+      works: '(使用 React 前端框架，開發UI/功能元件，串接後端API，修改維護網頁內容，互動設計，依照規格書開發產品)',
       year: '2021',
     },
     {
@@ -37,7 +37,8 @@ const Content = (props) => {
   ];
 
   return (
-    <div className={contentClass} ref={experience}>
+    <div className={experienceClass} ref={experience}>
+      <div className="background" />
       <div className="container">
         <article className="titleBlock">
           <p className="title">學經歷</p>
@@ -65,4 +66,4 @@ const Content = (props) => {
   );
 }
 
-export default Content;
+export default Experience;
