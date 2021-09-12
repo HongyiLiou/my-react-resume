@@ -1,11 +1,11 @@
 /** Sidebar Nav Items */
 export const navItems = [
-  { activeRefIndex: 1, title: '基本資料', content: '簡介、聯絡方式', icon: 'basicInfo' },
-  { activeRefIndex: 3, title: '學經歷', content: '學歷科系、工作經歷', icon: 'experience' },
-  { activeRefIndex: 5, title: '技能', content: '專長、擅長工具', icon: 'skills' },
-  { activeRefIndex: 7, title: '關於我', content: '自傳、興趣延伸', icon: 'about' },
-  { activeRefIndex: 9, title: '專業經驗', content: '專業學習、平面設計、網頁前端相關經驗', icon: 'autobiography' },
-  { activeRefIndex: 11, title: '作品', content: 'Web前端作品展示', icon: 'works' },
+  { activeRefIndex: 0, title: '基本資料', content: '簡介、聯絡方式', icon: 'basicInfo' },
+  { activeRefIndex: 1, title: '學經歷', content: '學歷科系、工作經歷', icon: 'experience' },
+  { activeRefIndex: 2, title: '技能', content: '專長、擅長工具', icon: 'skills' },
+  { activeRefIndex: 3, title: '關於我', content: '自傳、興趣延伸', icon: 'about' },
+  { activeRefIndex: 4, title: '專業經驗', content: '專業學習、平面設計、網頁前端相關經驗', icon: 'autobiography' },
+  { activeRefIndex: 5, title: '作品', content: 'Web前端作品展示', icon: 'works' },
 ];
 
 /** Links (我的連結) */

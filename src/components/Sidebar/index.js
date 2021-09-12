@@ -19,7 +19,7 @@ const Sidebar = () => {
   return (
     <aside className={sidebarClass}>
       <div className="header">Hong-Yi Liou</div>
-      <article className={`photo ${refIndex !== 1 && refIndex > -1 ? 'active' : ''}`}>
+      <article className={`photo ${refIndex !== 0 && refIndex > -1 ? 'active' : ''}`}>
         <section className={`miniButtonGroup ${isminiButtonsOpen ? 'active' : ''}`} title="相關連結們">
           <button className="handleClick" onClick={() => setMiniButtonsOpen(() => !isminiButtonsOpen)} />
           {
@@ -38,7 +38,7 @@ const Sidebar = () => {
           navItems.map(item => {
             return (
               <li
-                className={`navItem ${item.icon} ${(refIndex === item.activeRefIndex || refIndex === -1 && item.activeRefIndex === 1) ? 'active' : ''}`}
+                className={`navItem ${item.icon} ${(refIndex === item.activeRefIndex || refIndex === -1 && item.activeRefIndex === 0) ? 'active' : ''}`}
                 onClick={() => setNavActive(item.activeRefIndex)}
               >
                 {item.title}
