@@ -1,6 +1,6 @@
 .experienceContainer {
   position: relative;
-  padding: 150px 0;
+  padding: 70px 0 150px 0;
   /* height: 200px; */
   background: #fffdfd;
   /* background: linear-gradient(30deg, #e7daff, #fffdfd 30%); */
@@ -68,6 +68,7 @@
   font-size: 150%;
   color: #554b63;
   font-weight: 900;
+  font-family: 微軟正黑體;
 }
 .experienceContainer .timeline .item::before,
 .experienceContainer .timeline .item::after {
@@ -101,7 +102,7 @@
   right: calc(100% + 70px);
   font-size: 90%;
   white-space: nowrap;
-  font-weight: 500;
+  font-weight: 900;
 }
 .experienceContainer .timeline .line {
   position: absolute;

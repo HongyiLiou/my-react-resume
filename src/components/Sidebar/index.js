@@ -1,36 +1,46 @@
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { changeTheme } from '../../reducers';
+import { navItems, links } from '../../configs';
 import './style.css';
 
 const Sidebar = () => {
   const theme = useSelector(state => state.theme);
+  const refs = useSelector(state => state.refs);
+  const activeRef = useSelector(state => state.activeRef);
+  const refIndex = refs.indexOf(activeRef);
   const disPatch = useDispatch();
   const sidebarClass = theme === 'light' ? 'sidebarContainer' : 'sidebarContainer dark';
-  const navItems = [
-    { active: true, title: '基本資料', content: '簡介、聯絡方式', icon: 'basicInfo' },
-    { active: false, title: '學經歷', content: '學歷科系、工作經歷', icon: 'experience' },
-    { active: false, title: '技能', content: '專長、擅長工具', icon: 'skills' },
-    { active: false, title: '關於我', content: '自傳、興趣延伸', icon: 'about' },
-    { active: false, title: '專業經驗', content: '專業學習、平面設計、網頁前端相關經驗', icon: 'autobiography' },
-    { active: false, title: '作品', content: 'Web前端作品展示', icon: 'works' },
-  ];
-  const [stateNavItems, setNavItems] = useState(navItems);
+  const [isminiButtonsOpen, setMiniButtonsOpen] = useState(false);
   const setNavActive = (index) => {
-    const newNavItems = stateNavItems.map(item => item);
-    newNavItems.forEach(item => item.active = false);
-    newNavItems[index].active = true;
-    setNavItems(() => newNavItems);
+    document.body.parentNode.scrollTop = refs[index].current.offsetTop;
   }
 
   return (
     <aside className={sidebarClass}>
       <div className="header">Hong-Yi Liou</div>
+      <article className={`photo ${refIndex !== 1 && refIndex > -1 ? 'active' : ''}`}>
+        <section className={`miniButtonGroup ${isminiButtonsOpen ? 'active' : ''}`} title="相關連結們">
+          <button className="handleClick" onClick={() => setMiniButtonsOpen(() => !isminiButtonsOpen)} />
+          {
+            links.map(link => {
+              return (
+                <div className={`link ${link.name}`} title={link.title}>
+                  <a className="handleClick" href={link.url} target="_blank" rel="noreferrer" />
+                </div>
+              );
+            })
+          }
+        </section>
+      </article>
       <ul className="navList">
         {
-          stateNavItems.map((item, index) => {
+          navItems.map(item => {
             return (
-              <li className={`navItem ${item.icon} ${item.active ? 'active' : ''}`} onClick={() => setNavActive(index)}>
+              <li
+                className={`navItem ${item.icon} ${(refIndex === item.activeRefIndex || refIndex === -1 && item.activeRefIndex === 1) ? 'active' : ''}`}
+                onClick={() => setNavActive(item.activeRefIndex)}
+              >
                 {item.title}
                 {
                   item.content &&

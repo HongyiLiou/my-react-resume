@@ -3,6 +3,7 @@ import './style.css';
 import { useDispatch } from 'react-redux';
 import { uploadRefs } from '../../../../reducers';
 import { useSelector } from 'react-redux';
+import { links } from '../../../../configs';
 
 const Header = (props) => {
   const { theme } = props;
@@ -11,13 +12,6 @@ const Header = (props) => {
   const disPatch = useDispatch();
   const refs = useSelector(state => state.refs);
   disPatch(uploadRefs(basicInfo));
-  const links = [
-    { name: 'github', title: 'Github', link: 'https://github.com/HongyiLiou' },
-    { name: 'codepen', title: 'Codepen', link: 'https://codepen.io/HongyiLiou' },
-    { name: 'facebook', title: 'Facebook', link: 'https://www.facebook.com/uchiha.zhu' },
-    { name: 'instagram', title: 'Instagram', link: 'https://www.instagram.com/hongyi_liou' },
-    { name: 'youtube', title: 'Youtube', link: 'https://goo.gl/vZ8g9S' },
-  ];
 
   return (
     <header className={headerClass} ref={basicInfo}>
@@ -37,7 +31,7 @@ const Header = (props) => {
                   return (
                     <li className={link.name} title={link.title}>
                       <a
-                        href={link.link}
+                        href={link.url}
                         target="_blank"
                         rel="noreferrer"
                       />
