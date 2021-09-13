@@ -1,0 +1,90 @@
+.aboutContainer {
+  position: relative;
+  padding: 70px 0 70px 0;
+  background: #fffdfd;
+  /* background: linear-gradient(30deg, #e7daff, #fffdfd 30%); */
+  overflow: hidden;
+  transition: 0.2s;
+}
+.aboutContainer .background {
+  position: absolute;
+  width: 150vw;
+  height: 100%;
+  right: 0;
+  top: calc(100% - 400px);
+  /* background: linear-gradient(-15deg, #ffd8d8, #cbe6ff); */
+  background: #ffeaea;
+  transform-origin: top right;
+  transform: rotate(-5deg);
+  transition: 0.2s;
+  z-index: 0;
+}
+.aboutContainer .titleBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutContainer .title {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 200%;
+}
+.aboutContainer .title::before,
+.aboutContainer .title::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  bottom: -5px;
+  background: #554b63;
+}
+.aboutContainer .title::before {
+  transform: translateX(calc(-100% - 50px));
+}
+.aboutContainer .title::after {
+  transform: translateX(calc(0% + 50px));
+}
+.aboutContainer .subtitle {
+  font-size: 150%;
+  font-style: italic;
+}
+.aboutContainer .title,
+.aboutContainer .subtitle {
+  color: #554b63;
+  letter-spacing: 1px;
+}
+.aboutContainer .content {
+  margin-top: 100px;
+}
+.aboutContainer .content .text {
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  font-size: 120%;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 2;
+  color: #554b63;
+  font-family: 微軟正黑體;
+  font-weight: 900;
+}
+.aboutContainer .content .text.interests {
+  color: #5f3b3b;
+}
+.aboutContainer .content .playGuitar {
+  width: 680px;
+  height: 400px;
+  padding: 10px;
+  margin: 50px auto 50px auto;
+  background: url(../../../../images/playGuitar.jpg) center center no-repeat;
+  background-color: #FFF;
+  background-size: calc(100% - 30px) calc(100% - 30px);
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(73, 40, 73, 0.5);
+  transform-origin: center center;
+  transform: rotate(3deg);
+}
+
+/* Dark Theme */
+.aboutContainer.dark {
+  background: #5f5d5d;
+}

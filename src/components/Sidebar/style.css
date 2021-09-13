@@ -67,7 +67,7 @@
   right: -100px;
 }
 .sidebarContainer .miniButtonGroup.active::before {
-  transform: rotate(720deg);
+  transform: rotate(360deg);
 }
 .sidebarContainer .miniButtonGroup::before {
   content: '\f0c1';

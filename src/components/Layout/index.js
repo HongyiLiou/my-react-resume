@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import Header from './components/Header';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
+import About from './components/About';
+import Professional from './components/Professional';
 import { setActiveRef } from '../../reducers';
 import './style.css';
 
@@ -49,6 +51,8 @@ const Layout = () => {
       <Header theme={theme} />
       <Experience theme={theme} />
       <Skills theme={theme} />
+      <About theme={theme} />
+      <Professional theme={theme} />
     </article>
   );
 }

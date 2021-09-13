@@ -74,8 +74,9 @@ export const tools = [
       'HTML / Pug',
       'CSS / Sass / Scss',
       'JavaScript / TypeScript / jQuery',
-      'React / Angular / Ionic',
-      'Webpack / git',
+      'React / Redux / React Hook',
+      'Angular / Ionic',
+      'Webpack / Azure DevOps / git',
     ],
   },
 ];

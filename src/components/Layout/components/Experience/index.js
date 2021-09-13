@@ -17,7 +17,7 @@ const Experience = (props) => {
       <div className="container">
         <article className="titleBlock">
           <p className="title">學經歷</p>
-          <p className="subtitle">Education & Work Experience</p>
+          <p className="subtitle">Education & Work experience</p>
         </article>
         <article className="timelineBlock">
           <ul className="timeline">
