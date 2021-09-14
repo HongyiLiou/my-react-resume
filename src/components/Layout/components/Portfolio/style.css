@@ -76,7 +76,7 @@
 .portfolioContainer .content .webPortfolios.active .portfolio {
   opacity: 1;
   transform: translateY(0%) !important;
-  pointer-events: none;
+  pointer-events: auto;
 }
 .portfolioContainer .content .webPortfolios .portfolio {
   position: relative;
