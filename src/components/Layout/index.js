@@ -5,6 +5,8 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import About from './components/About';
 import Professional from './components/Professional';
+import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 import { setActiveRef } from '../../reducers';
 import './style.css';
 
@@ -53,6 +55,8 @@ const Layout = () => {
       <Skills theme={theme} />
       <About theme={theme} />
       <Professional theme={theme} />
+      <Portfolio theme={theme} />
+      <Footer theme={theme} />
     </article>
   );
 }

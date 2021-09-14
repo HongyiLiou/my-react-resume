@@ -1,0 +1,14 @@
+.footerContainer {
+  position: relative;
+  background: #fffdfd;
+  /* background: linear-gradient(30deg, #e7daff, #fffdfd 30%); */
+  overflow: hidden;
+  transition: 0.2s;
+}
+.footerContainer .footer {
+  text-align: center;
+  font-size: 120%;
+  line-height: 60px;
+  font-weight: 400;
+  color: #554b63;
+}

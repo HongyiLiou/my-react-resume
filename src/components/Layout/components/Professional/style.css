@@ -10,12 +10,37 @@
   position: absolute;
   width: 150vw;
   height: 100%;
+  left: 0;
+  bottom: calc(100% - 150px);
+  background: #ecf6ff;
+  transform-origin: bottom center;
+  transform: rotate(10deg);
+  transition: 0.2s;
+  z-index: 0;
+}
+.professionalContainer .background2 {
+  position: absolute;
+  width: 150vw;
+  height: 100%;
   right: 0;
   top: -100%;
   /* background: linear-gradient(-15deg, #ffd8d8, #cbe6ff); */
   background: #ffeaea;
   transform-origin: top right;
   transform: rotate(-8deg);
+  transition: 0.2s;
+  z-index: 0;
+}
+.professionalContainer .background3 {
+  position: absolute;
+  width: 150vw;
+  height: 100%;
+  right: 0;
+  top: calc(100% - 220px);
+  /* background: linear-gradient(-15deg, #ffd8d8, #cbe6ff); */
+  background: #ffeaea;
+  transform-origin: top right;
+  transform: rotate(-5deg);
   transition: 0.2s;
   z-index: 0;
 }
@@ -70,12 +95,12 @@
 .professionalContainer .content .text.interests {
   color: #5f3b3b;
 }
-.professionalContainer .content .playGuitar {
-  width: 680px;
-  height: 400px;
+.professionalContainer .content .poster {
+  width: 400px;
+  height: 560px;
   padding: 10px;
   margin: 50px auto 50px auto;
-  background: url(../../../../images/playGuitar.jpg) center center no-repeat;
+  background: url(../../../../images/poster.jpg) center center no-repeat;
   background-color: #FFF;
   background-size: calc(100% - 30px) calc(100% - 30px);
   border-radius: 5px;
