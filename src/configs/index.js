@@ -86,31 +86,37 @@ export const portfolios = [
   {
     title: '我的舊履歷',
     cssClass: 'myOldResume',
-    info: '兩年前的自製RWD履歷網頁，手機版畫面有驚喜呦：）'
+    info: '兩年前的自製 RWD 履歷網頁，手機版畫面有驚喜呦：）',
+    url: 'https://hongyiliou.github.io/MyResume/',
   },
   {
     title: 'Balance Sheet',
     cssClass: 'balanceSheet',
-    info: '本來是練習以 Google 雲端試算表為資料庫的 WebApp，結果功能越做越多XD ( 測試帳密：test / test )。'
+    info: '本來是練習以 Google 雲端試算表為資料庫的 WebApp，結果功能越做越多XD ( 測試帳密：test / test )。',
+    url: 'https://hongyiliou.github.io/BalanceSheet/',
   },
   {
     title: 'Buttons Demo',
     cssClass: 'buttonsDemo',
-    info: '獨立設計的按鈕 Demo 展示網頁，並結合 skrollr.js 製作動態效果。最上方的按鈕是純手刻的呦！'
+    info: '獨立設計的按鈕 Demo 展示網頁，並結合 skrollr.js 製作動態效果。最上方的按鈕是純手刻的呦！',
+    url: 'https://hongyiliou.github.io/ButtonsDemo/',
   },
   {
     title: 'Weather Box',
     cssClass: 'weatherBox',
-    info: '以 CSS 刻出動態互動天氣盒子(滑鼠移入/點擊互動)，並利用 jQuery 呈現現實時間。'
+    info: '以 CSS 刻出動態互動天氣盒子(滑鼠移入/點擊互動)，並利用 jQuery 呈現現實時間。',
+    url: 'https://hongyiliou.github.io/weatherbox/',
   },
   {
     title: '四個數字',
     cssClass: 'numbers',
-    info: '讀取輸入在 input 中的數字並顯示於手刻顯示器上、讀取顏色 input 來改變整個網頁的色彩樣式。'
+    info: '讀取輸入在 input 中的數字並顯示於手刻顯示器上、讀取顏色 input 來改變整個網頁的色彩樣式。',
+    url: 'https://hongyiliou.github.io/4numbers/',
   },
   {
     title: 'Buy List',
     cssClass: 'buylist',
-    info: '可自由增刪並加總價格的購物清單。'
+    info: '可自由增刪並加總價格的購物清單。',
+    url: 'https://hongyiliou.github.io/Buylist/',
   },
 ];

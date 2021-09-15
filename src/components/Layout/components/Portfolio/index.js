@@ -14,6 +14,7 @@ const Portfolio = (props) => {
   const activeRef = useSelector(state => state.activeRef);
   const refIndex = refs.indexOf(activeRef);
   const webPortfoliosClass = refIndex === 5 ? 'webPortfolios active' : 'webPortfolios';
+  // const webPortfoliosClass = refIndex === 11 ? 'webPortfolios active' : 'webPortfolios';
 
   return (
     <div className={portfolioClass} ref={portfolios}>
@@ -32,6 +33,8 @@ const Portfolio = (props) => {
                   <li className={`portfolio ${portfolio.cssClass}`}>
                     <div className="inner" />
                     <p className="innerText">{portfolio.title}</p>
+                    <p className="info">{portfolio.info}</p>
+                    <a className="link" href={portfolio.url} target="_blank" rel="noreferrer" />
                   </li>
                 );
               })

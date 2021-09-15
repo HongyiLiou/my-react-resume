@@ -38,7 +38,7 @@ const Sidebar = () => {
           navItems.map(item => {
             return (
               <li
-                className={`navItem ${item.icon} ${(refIndex === item.activeRefIndex || refIndex === -1 && item.activeRefIndex === 0) ? 'active' : ''}`}
+                className={`navItem ${item.icon} ${((refIndex === item.activeRefIndex) || (refIndex === -1 && item.activeRefIndex === 0)) ? 'active' : ''}`}
                 onClick={() => setNavActive(item.activeRefIndex)}
               >
                 {item.title}

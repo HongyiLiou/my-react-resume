@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import './style.css';
 import { useDispatch } from 'react-redux';
 import { uploadRefs } from '../../../../reducers';
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import { links } from '../../../../configs';
 
 const Header = (props) => {
@@ -10,7 +10,7 @@ const Header = (props) => {
   const headerClass = theme === 'light' ? 'headerContainer' : 'headerContainer dark';
   const basicInfo = useRef();
   const disPatch = useDispatch();
-  const refs = useSelector(state => state.refs);
+  // const refs = useSelector(state => state.refs);
   disPatch(uploadRefs(basicInfo));
 
   return (
@@ -41,12 +41,12 @@ const Header = (props) => {
               }
             </ul>
           </div>
-          <button
+          {/* <button
             style={{ position: 'absolute', right: '20px' }}
             onClick={() => { console.log('getBoundingClientRect', refs); }}
           >
             看看
-          </button>
+          </button> */}
         </div>
         <div className="summary">
           <p>三年實務經驗的前端工程師，熱愛音樂、影像視覺，樂於學習新技術。</p>
