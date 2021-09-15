@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/my-react-resume/static/css/main.85315301.chunk.css",
-    "main.js": "/my-react-resume/static/js/main.a0c1de49.chunk.js",
-    "main.js.map": "/my-react-resume/static/js/main.a0c1de49.chunk.js.map",
+    "main.css": "/my-react-resume/static/css/main.a292efd2.chunk.css",
+    "main.js": "/my-react-resume/static/js/main.09710d4a.chunk.js",
+    "main.js.map": "/my-react-resume/static/js/main.09710d4a.chunk.js.map",
     "runtime-main.js": "/my-react-resume/static/js/runtime-main.2a40b691.js",
     "runtime-main.js.map": "/my-react-resume/static/js/runtime-main.2a40b691.js.map",
     "static/js/2.9615b6db.chunk.js": "/my-react-resume/static/js/2.9615b6db.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.794b1f48.chunk.js": "/my-react-resume/static/js/3.794b1f48.chunk.js",
     "static/js/3.794b1f48.chunk.js.map": "/my-react-resume/static/js/3.794b1f48.chunk.js.map",
     "index.html": "/my-react-resume/index.html",
-    "static/css/main.85315301.chunk.css.map": "/my-react-resume/static/css/main.85315301.chunk.css.map",
+    "static/css/main.a292efd2.chunk.css.map": "/my-react-resume/static/css/main.a292efd2.chunk.css.map",
     "static/js/2.9615b6db.chunk.js.LICENSE.txt": "/my-react-resume/static/js/2.9615b6db.chunk.js.LICENSE.txt",
     "static/media/style.css": "/my-react-resume/static/media/weatherbox.fe188260.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2a40b691.js",
     "static/js/2.9615b6db.chunk.js",
-    "static/css/main.85315301.chunk.css",
-    "static/js/main.a0c1de49.chunk.js"
+    "static/css/main.a292efd2.chunk.css",
+    "static/js/main.09710d4a.chunk.js"
   ]
 }
