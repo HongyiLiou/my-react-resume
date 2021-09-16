@@ -60,16 +60,15 @@ const Sidebar = () => {
           />
         </li>
       </ul>
-      <div style={{ position: 'absolute', bottom: '0' }}>
-        <span>Theme: </span>
-        <input value={theme} />
+      <label className="toggleSwitch">
+        <input type="checkbox" checked={theme === 'dark'} />
+        <div className="toggle" />
         <button
+          className="handleClick"
           type="button"
           onClick={() => { disPatch(changeTheme(theme === 'dark' ? 'light' : 'dark')); }}
-        >
-          按按看R
-        </button>
-      </div>
+        />
+      </label>
     </aside>
   );
 };

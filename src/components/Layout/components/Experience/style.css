@@ -1,9 +1,7 @@
 .experienceContainer {
   position: relative;
   padding: 70px 0 150px 0;
-  /* height: 200px; */
   background: #fffdfd;
-  /* background: linear-gradient(30deg, #e7daff, #fffdfd 30%); */
   overflow: hidden;
   transition: 0.2s;
 }
@@ -13,7 +11,6 @@
   height: 100%;
   right: 0;
   top: calc(100% - 250px);
-  /* background: linear-gradient(-15deg, #ffd8d8, #cbe6ff); */
   background: #ffeaea;
   transform-origin: top right;
   transform: rotate(-5deg);
@@ -38,6 +35,7 @@
   height: 1px;
   bottom: -5px;
   background: #554b63;
+  transition: 0.2s;
 }
 .experienceContainer .title::before {
   transform: translateX(calc(-100% - 50px));
@@ -53,6 +51,7 @@
 .experienceContainer .subtitle {
   color: #554b63;
   letter-spacing: 1px;
+  transition: 0.2s;
 }
 .experienceContainer .timelineBlock {
   display: flex;
@@ -69,6 +68,7 @@
   color: #554b63;
   font-weight: 900;
   font-family: 微軟正黑體;
+  transition: 0.2s;
 }
 .experienceContainer .timeline .item::before,
 .experienceContainer .timeline .item::after {
@@ -82,6 +82,7 @@
   top: 7px;
   left: -50px;
   background: #e5d2ff;
+  transition: 0.2s;
   z-index: 1;
   animation: linePoint 3s infinite;
 }
@@ -91,6 +92,7 @@
   top: 7px;
   left: -50px;
   background: #554b63;
+  transition: 0.2s;
   z-index: 1;
 }
 .experienceContainer .timeline .item:last-child .line {
@@ -111,6 +113,7 @@
   width: 1px;
   height: calc(100% - 40px);
   background: #554b63;
+  transition: 0.2s;
   opacity: 0.5;
   z-index: 0;
 }
@@ -118,6 +121,7 @@
   margin-top: 15px;
   font-size: 80%;
   color: #69518f;
+  transition: 0.2s;
 }
 .experienceContainer .timeline .works {
   margin-top: 5px;
@@ -126,11 +130,35 @@
   color: #bd5b00;
   text-align: justify;
   font-weight: 400;
+  transition: 0.2s;
 }
 
 /* Dark Theme */
 .experienceContainer.dark {
-  background: #5f5d5d;
+  background: #2c2b2b;
+}
+.experienceContainer.dark .background {
+  background: #291e1e;
+}
+.experienceContainer.dark .title::before,
+.experienceContainer.dark .title::after,
+.experienceContainer.dark .timeline .item::after,
+.experienceContainer.dark .timeline .line {
+  background: #c7c7c7;
+}
+.experienceContainer.dark .title,
+.experienceContainer.dark .subtitle,
+.experienceContainer.dark .timeline .item {
+  color: #c7c7c7;
+}
+.experienceContainer.dark .timeline .item::before {
+  background: #7a7777;
+}
+.experienceContainer.dark .timeline .unit {
+  color: #67cdfd;
+}
+.experienceContainer.dark .timeline .works {
+  color: #f7a354;
 }
 
 /* Animations */

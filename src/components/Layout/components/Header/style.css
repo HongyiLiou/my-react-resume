@@ -28,6 +28,7 @@
   border-radius: 50%;
   background: url(../../../../images/me.jpg) center center no-repeat;
   background-size: cover;
+  transition: 0.2s;
   border: solid 6px #FFF;
 }
 .headerContainer .titleArea {
@@ -38,6 +39,7 @@
   letter-spacing: 1px;
   font-size: 200%;
   font-family: 微軟正黑體;
+  transition: 0.2s;
 }
 .headerContainer .subtitle {
   margin: 5px 0 30px 0;
@@ -45,6 +47,7 @@
   font-size: 115%;
   font-family: 微軟正黑體;
   font-weight: 500;
+  transition: 0.2s;
 }
 .headerContainer .contact {
   position: relative;
@@ -54,6 +57,7 @@
   font-size: 115%;
   font-family: 微軟正黑體;
   font-weight: 900;
+  transition: 0.2s;
 }
 .headerContainer .contact.email::before {
   content: 'E-mail： ';
@@ -147,11 +151,13 @@
   left: 40px;
   top: 350px;
   color: #cdc6da;
+  transition: 0.2s;
   /* opacity: 0.5; */
 }
 .headerContainer .summary {
   margin-top: 40px;
   color: #69518f;
+  transition: 0.2s;
 }
 .headerContainer .summary p {
   position: relative;
@@ -168,8 +174,51 @@
 
 /* Dark Theme */
 .headerContainer.dark {
-  background: #5f5d5d;
+  background: #2c2b2b;
 }
 .headerContainer.dark .background {
   background: linear-gradient(15deg, #332b2b, #424b53);
+}
+.headerContainer.dark .photo {
+  border: solid 6px #9b9b9b;
+}
+.headerContainer.dark .title {
+  color: #e2dede;
+}
+.headerContainer.dark .subtitle {
+  color: #adadad;
+}
+.headerContainer.dark .contact {
+  color: #00f7ff;
+}
+.headerContainer.dark .links li {
+  background: #272525;
+}
+.headerContainer.dark .links li:hover {
+  background: #424040;
+  box-shadow: 0 0 5px #FFF;
+}
+.headerContainer.dark .links li:hover::before {
+  color: #FFF !important;
+}
+.headerContainer.dark .links .github::before {
+  color: #d7bbff;
+}
+.headerContainer.dark .links .codepen::before {
+  color: #dacbcb;
+}
+.headerContainer.dark .links .facebook::before {
+  color: #b9c6ff;
+}
+.headerContainer.dark .links .instagram::before {
+  color: #ffbddc;
+}
+.headerContainer.dark .links .youtube::before {
+  color: #fcb1b1;
+}
+.headerContainer.dark .titleBackground {
+  color: #3f3f3f;
+}
+.headerContainer.dark .summary {
+  color: #e2dede;
 }
