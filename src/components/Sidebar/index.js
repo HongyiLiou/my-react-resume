@@ -60,7 +60,7 @@ const Sidebar = () => {
           />
         </li>
       </ul>
-      <label className="toggleSwitch">
+      <label className="toggleSwitch" title={`${theme === 'dark' ? '開燈' : '關燈'}`}>
         <input type="checkbox" checked={theme === 'dark'} />
         <div className="toggle" />
         <button
@@ -74,8 +74,3 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
-// 基本資料-簡介、聯絡方式
-// 學經歷-學歷科系、工作經歷
-// 技能-專長、擅長工具
-// 關於我-自傳、興趣延伸
-// 專業經驗-專業學習、平面設定、網頁前端相關經驗

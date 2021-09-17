@@ -409,3 +409,16 @@
   background: #242323;
   box-shadow: 0 0 3px #ffffff;
 }
+
+/* RWD */
+@media screen and (max-width: 1500px) {
+  .sidebarContainer {
+    height: calc(100vh * 1.111);
+    transform-origin: top left;
+    transform: scale(0.9);
+  }
+  .sidebarContainer .toggleSwitch {
+    transform-origin: center center;
+    transform: translateX(-50%) scale(0.9);
+  }
+}

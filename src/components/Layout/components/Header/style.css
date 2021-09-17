@@ -28,8 +28,8 @@
   border-radius: 50%;
   background: url(../../../../images/me.jpg) center center no-repeat;
   background-size: cover;
-  transition: 0.2s;
   border: solid 6px #FFF;
+  transition: 0.2s;
 }
 .headerContainer .titleArea {
   margin-left: 50px;
@@ -152,7 +152,6 @@
   top: 350px;
   color: #cdc6da;
   transition: 0.2s;
-  /* opacity: 0.5; */
 }
 .headerContainer .summary {
   margin-top: 40px;
@@ -221,4 +220,70 @@
 }
 .headerContainer.dark .summary {
   color: #e2dede;
+}
+
+/* RWD */
+@media screen and (max-width: 1500px) {
+  .headerContainer {
+    height: 540px;
+  }
+  .headerContainer .userInfo {
+    padding-top: 63px;
+  }
+  .headerContainer .photo {
+    width: 180px;
+    height: 180px;
+    border: solid 6px #FFF;
+  }
+  .headerContainer .titleArea {
+    margin-left: 40px;
+  }
+  .headerContainer .title {
+    font-size: 180%;
+  }
+  .headerContainer .subtitle {
+    margin: 4px 0 27px 0;
+    font-size: 103%;
+  }
+  .headerContainer .contact {
+    position: relative;
+    margin-top: 9px;
+    padding-left: 63px;
+    font-size: 103%;
+  }
+  .headerContainer .links {
+    margin-top: 12px;
+  }
+  .headerContainer .links li {
+    margin-right: 12px;
+    width: 36px;
+    height: 36px;
+  }
+  .headerContainer .links li::before {
+    font-size: 180%;
+  }
+  .headerContainer .links .github::before {
+    font-size: 210%;
+  }
+  .headerContainer .titleBackground {
+    font-size: 1170%;
+    left: 36px;
+    top: 315px;
+    color: #cdc6da;
+    transition: 0.2s;
+  }
+  .headerContainer .summary {
+    margin-top: 36px;
+  }
+  .headerContainer .summary p {
+    max-width: 1350px;
+    margin-top: 9px;
+    padding-right: 90px;
+    font-size: 144%;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-align: right;
+    z-index: 1;
+  }
 }
