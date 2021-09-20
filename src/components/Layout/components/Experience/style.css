@@ -161,6 +161,69 @@
   color: #f7a354;
 }
 
+/* RWD */
+@media screen and (max-width: 1500px) {
+  .experienceContainer {
+    padding: 63px 0 135px 0;
+  }
+  .experienceContainer .background {
+    top: calc(100% - 210px);
+  }
+  .experienceContainer .title {
+    margin-bottom: 9px;
+    font-size: 180%;
+  }
+  .experienceContainer .title::before,
+  .experienceContainer .title::after {
+    width: 180px;
+    bottom: -4px;
+  }
+  .experienceContainer .title::before {
+    transform: translateX(calc(-100% - 40px));
+  }
+  .experienceContainer .title::after {
+    transform: translateX(calc(0% + 40px));
+  }
+  .experienceContainer .subtitle {
+    font-size: 135%;
+  }
+  .experienceContainer .timelineBlock {
+    margin-top: 90px;
+  }
+  .experienceContainer .timeline {
+    padding: 0 0 0 180px;
+  }
+  .experienceContainer .timeline .item {
+    padding-bottom: 40px;
+    font-size: 135%;
+  }
+  .experienceContainer .timeline .item::before {
+    width: 14px;
+    height: 14px;
+    top: 6px;
+    left: -40px;
+  }
+  .experienceContainer .timeline .item::after {
+    width: 14px;
+    height: 14px;
+    top: 6px;
+    left: -40px;
+  }
+  .experienceContainer .timeline .line {
+    top: 31px;
+    left: -33px;
+    height: calc(100% - 36px);
+    opacity: 0.4;
+  }
+  .experienceContainer .timeline .unit {
+    margin-top: 13px;
+  }
+  .experienceContainer .timeline .works {
+    margin-top: 4px;
+    max-width: 342px;
+  }
+}
+
 /* Animations */
 @keyframes linePoint {
   0% {

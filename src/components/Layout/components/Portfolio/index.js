@@ -13,8 +13,8 @@ const Portfolio = (props) => {
   const refs = useSelector(state => state.refs);
   const activeRef = useSelector(state => state.activeRef);
   const refIndex = refs.indexOf(activeRef);
-  const webPortfoliosClass = refIndex === 5 ? 'webPortfolios active' : 'webPortfolios';
-  // const webPortfoliosClass = refIndex === 11 ? 'webPortfolios active' : 'webPortfolios';
+  // const webPortfoliosClass = refIndex === 5 ? 'webPortfolios active' : 'webPortfolios';
+  const webPortfoliosClass = refIndex === 11 ? 'webPortfolios active' : 'webPortfolios';
 
   return (
     <div className={portfolioClass} ref={portfolios}>

@@ -279,6 +279,71 @@
   color: #f7a354;
 }
 
+/* RWD */
+@media screen and (max-width: 1500px) {
+  .skillsContainer {
+    padding: 180px 0 135px 0;
+  }
+  .skillsContainer .background {
+    bottom: calc(100% - 135px);
+  }
+  .skillsContainer .title {
+    margin-bottom: 9px;
+    font-size: 180%;
+  }
+  .skillsContainer .title::before,
+  .skillsContainer .title::after {
+    width: 180px;
+    bottom: -4px;
+  }
+  .skillsContainer .title::before {
+    transform: translateX(calc(-100% - 40px));
+  }
+  .skillsContainer .title::after {
+    transform: translateX(calc(0% + 40px));
+  }
+  .skillsContainer .subtitle {
+    font-size: 135%;
+  }
+  .skillsContainer .skillBlock {
+    margin-top: 90px;
+  }
+  .skillsContainer .skills {
+    max-width: 972px;
+  }
+  .skillsContainer .skillItem {
+    width: 162px;
+    height: 162px;
+  }
+  .skillsContainer .skillItem .skillName {
+    font-size: 180%;
+  }
+  .skillsContainer .skillItem .skillContent {
+    margin-top: 9px;
+    font-size: 108%;
+  }
+  .skillsContainer .toolBlock {
+    margin-top: 90px;
+  }
+  .skillsContainer .tools {
+    max-width: 900px;
+  }
+  .skillsContainer .toolType {
+    margin: 0 18px 13px 18px;
+    font-size: 180%;
+  }
+  .skillsContainer .line {
+    width: calc(100% - 36px);
+    height: 4px;
+    margin: 0 auto 13px auto;
+  }
+  .skillsContainer .toolName {
+    padding: 0 36px;
+    font-size: 117%;
+    margin-bottom: 9px;
+  }
+}
+
 /* Animations */
 @keyframes line {
   0% { background-position: 200% 0%; }

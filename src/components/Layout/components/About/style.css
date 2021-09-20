@@ -110,3 +110,46 @@
 .aboutContainer.dark .content .text.interests {
   color: #ffdbdb;
 }
+
+/* RWD */
+@media screen and (max-width: 1500px) {
+  .aboutContainer {
+    padding: 63px 0 63px 0;
+  }
+  .aboutContainer .background {
+    top: calc(100% - 360px);
+  }
+  .aboutContainer .title {
+    margin-bottom: 9px;
+    font-size: 180%;
+  }
+  .aboutContainer .title::before,
+  .aboutContainer .title::after {
+    width: 180px;
+    bottom: -4px;
+  }
+  .aboutContainer .title::before {
+    transform: translateX(calc(-100% - 40px));
+  }
+  .aboutContainer .title::after {
+    transform: translateX(calc(0% + 40px));
+  }
+  .aboutContainer .subtitle {
+    font-size: 135%;
+  }
+  .aboutContainer .content {
+    margin-top: 90px;
+  }
+  .aboutContainer .content .text {
+    max-width: 810px;
+    margin: 0 auto 27px auto;
+    font-size: 108%;
+  }
+  .aboutContainer .content .playGuitar {
+    width: 612px;
+    height: 360px;
+    padding: 9px;
+    margin: 40px auto 40px auto;
+    background-size: calc(100% - 27px) calc(100% - 27px);
+  }
+}
