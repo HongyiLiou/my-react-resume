@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { changeTheme } from '../../reducers';
+import { changeTheme, changeSidebarType } from '../../reducers';
 import { navItems, links } from '../../configs';
 import './style.css';
 
@@ -9,16 +9,27 @@ const Sidebar = () => {
   const refs = useSelector(state => state.refs);
   const activeRef = useSelector(state => state.activeRef);
   const refIndex = refs.indexOf(activeRef);
+  const sidebarType = useSelector(state => state.rwdSidebar);
   const disPatch = useDispatch();
-  const sidebarClass = theme === 'light' ? 'sidebarContainer' : 'sidebarContainer dark';
+  const sidebarClasses = ['sidebarContainer'];
+  const hambergerClass = sidebarType === 'outer' ? 'hamberger' : 'hamberger back';
   const [isminiButtonsOpen, setMiniButtonsOpen] = useState(false);
   const setNavActive = (index) => {
     document.body.parentNode.scrollTop = refs[index].current.offsetTop;
   }
+  if (theme === 'dark') {
+    sidebarClasses.push('dark');
+  }
+  if (sidebarType === 'inner') {
+    sidebarClasses.push('active');
+  }
 
   return (
-    <aside className={sidebarClass}>
+    <aside className={sidebarClasses.join(' ')}>
       <div className="header">Hong-Yi Liou</div>
+      <button className={hambergerClass} onClick={() => disPatch(changeSidebarType(sidebarType === 'outer' ? 'inner' : 'outer'))}>
+        <div className="line" />
+      </button>
       <article className={`photo ${refIndex !== 0 && refIndex > -1 ? 'active' : ''}`}>
         <section className={`miniButtonGroup ${isminiButtonsOpen ? 'active' : ''}`} title="相關連結們">
           <button className="handleClick" onClick={() => setMiniButtonsOpen(() => !isminiButtonsOpen)} />

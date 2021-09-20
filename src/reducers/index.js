@@ -7,7 +7,7 @@ const SET_ACTIVE_REF = 'SET_ACTIVE_REF';
 
 const initState = {
   theme: 'light',
-  sidebar: 'outer',
+  rwdSidebar: 'outer',
   refs: [],
   activeRef: null,
 };
@@ -20,8 +20,8 @@ const reducer = (state = initState, action) => {
       return state;
 
     case CHANGE_SIDEBAR_TYPE:
-      const sidebar = action.payload.sidebar;
-      state = Object.assign(state, { sidebar });
+      const rwdSidebar = action.payload.type;
+      state = Object.assign(state, { rwdSidebar });
       console.log('state', state);
       return state;
 
