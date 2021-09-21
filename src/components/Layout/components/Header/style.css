@@ -113,13 +113,13 @@
 }
 .headerContainer .links li::before {
   font-family: FontAwesome;
-  font-size: 15px;
+  font-size: 28px;
   color: #554b63;
   transition: 0.2s;
 }
 .headerContainer .links .github::before {
   content: '\f09b';
-  font-size: 14px;
+  font-size: 30px;
   color: #807294;
 }
 .headerContainer .links .codepen::before {

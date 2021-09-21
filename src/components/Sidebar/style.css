@@ -517,3 +517,10 @@
     pointer-events: auto !important;
   }
 }
+
+@media screen and (max-width: 990px) {
+  .sidebarContainer .toggleSwitch {
+    bottom: auto;
+    top: calc(100% - 80px);
+  }  
+}
