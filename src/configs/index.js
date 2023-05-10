@@ -20,21 +20,33 @@ export const links = [
 /** Experiecnce (學經歷) */
 export const experience = [
   {
+    name: '天下雜誌',
+    unit: '資訊科技部　前端工程師',
+    works: [
+      '開發及維護使用 Vue 2、Vue 3 及 Laravel 後端框架結合的產品專案(Cheers快樂工作人、創新學院)',
+      '維護使用 React 的產品專案(天下學習)',
+      '使用 D3.js 協助開發策展網頁動態圖表',
+      '開發UI/功能元件，串接後端API，修改維護網頁內容，互動設計，依照規格書開發產品',
+      '操作 Google Tag Manager 埋碼',
+    ],
+    year: '2022',
+  },
+  {
     name: 'Mayo鼎恒數位科技',
     unit: '薪酬及招募產品發展部　前端工程師',
-    works: '(使用 React 前端框架，開發UI/功能元件，串接後端API，修改維護網頁內容，互動設計，依照規格書開發產品)',
-    year: '2021',
+    works: ['使用 React 前端框架，開發UI/功能元件，串接後端API，修改維護網頁內容，互動設計，依照規格書開發產品'],
+    year: '2020',
   },
   {
     name: '鼎新電腦台中分公司',
     unit: '產品研發部　前端工程師',
-    works: '(使用 Angular 前端框架開發產品功能，實現UI設計圖，串接後端API，依照規格書開發產品)',
+    works: ['使用 Angular 前端框架開發產品功能，實現UI設計圖，串接後端API，依照規格書開發產品'],
     year: '2019',
   },
   {
     name: '格子科技',
     unit: '網頁設計部　網頁設計師',
-    works: '(網頁切版，將設計圖轉換成網頁程式碼，於此時精通了HTML/CSS)',
+    works: ['網頁切版，將設計圖轉換成網頁程式碼，於此時精通了HTML/CSS'],
     year: '2018',
   },
   {
@@ -84,9 +96,15 @@ export const tools = [
 /** Portfolios */
 export const portfolios = [
   {
+    title: 'Draw Turntable - 抽籤抽籤 (iOS)',
+    cssClass: 'drawTurntable',
+    info: '練習使用 React Native Expo 開發 App 並上架到 App Store 和 Google Play，是很方便的抽籤小工具',
+    url: 'https://apps.apple.com/us/app/draw-turntable-%E6%8A%BD%E7%B1%A4%E6%8A%BD%E7%B1%A4/id6446946674',
+  },
+  {
     title: '我的舊履歷',
     cssClass: 'myOldResume',
-    info: '兩年前的自製 RWD 履歷網頁，手機版畫面有驚喜呦：）',
+    info: '四年前的自製 RWD 履歷網頁，手機版畫面有驚喜呦：）',
     url: 'https://hongyiliou.github.io/MyResume/',
   },
   {
@@ -113,10 +131,10 @@ export const portfolios = [
     info: '讀取輸入在 input 中的數字並顯示於手刻顯示器上、讀取顏色 input 來改變整個網頁的色彩樣式。',
     url: 'https://hongyiliou.github.io/4numbers/',
   },
-  {
-    title: 'Buy List',
-    cssClass: 'buylist',
-    info: '可自由增刪並加總價格的購物清單。',
-    url: 'https://hongyiliou.github.io/Buylist/',
-  },
+  // {
+  //   title: 'Buy List',
+  //   cssClass: 'buylist',
+  //   info: '可自由增刪並加總價格的購物清單。',
+  //   url: 'https://hongyiliou.github.io/Buylist/',
+  // },
 ];

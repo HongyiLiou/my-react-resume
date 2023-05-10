@@ -137,6 +137,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.portfolioContainer .content .webPortfolios .portfolio.drawTurntable .inner,
+.portfolioContainer .content .mobilePortfolios .portfolio.drawTurntable .inner {
+  background-image: url(../../../../images/portfolio/drawTurntable.png);
+}
 .portfolioContainer .content .webPortfolios .portfolio.myOldResume .inner,
 .portfolioContainer .content .mobilePortfolios .portfolio.myOldResume .inner {
   background-image: url(../../../../images/portfolio/myOldResume.png);

@@ -124,13 +124,22 @@
   transition: 0.2s;
 }
 .experienceContainer .timeline .works {
-  margin-top: 5px;
+  position: relative;
+  margin-top: 12px;
+  padding-left: 20px;
   max-width: 380px;
   font-size: 73%;
   color: #bd5b00;
   text-align: justify;
-  font-weight: 400;
+  white-space: pre-line;
+  font-weight: 500;
   transition: 0.2s;
+}
+.experienceContainer .timeline .works::before {
+  content: '。';
+  position: absolute;
+  top: 1px;
+  left: 5px;
 }
 
 /* Dark Theme */
@@ -219,7 +228,7 @@
     margin-top: 13px;
   }
   .experienceContainer .timeline .works {
-    margin-top: 4px;
+    margin-top: 10px;
     max-width: 342px;
   }
 }

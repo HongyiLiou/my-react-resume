@@ -22,12 +22,16 @@ const Experience = (props) => {
         <article className="timelineBlock">
           <ul className="timeline">
             {
-              experienceData.map(d => {
+              experienceData.map((d, i) => {
                 return (
-                  <li className="item">
+                  <li className="item" key={`timelineItem_${i}`}>
                     {d.name}
                     <p className="unit">{d.unit}</p>
-                    <p className="works">{d.works || null}</p>
+                    {
+                      d.works?.map((work, index) => {
+                        return <p className="works" key={`work_${index}`}>{work}</p>;
+                      })
+                    }
                     <p className="year">{d.year}</p>
                     <div className="line" />
                   </li>
