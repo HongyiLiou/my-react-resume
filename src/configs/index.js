@@ -98,7 +98,7 @@ export const portfolios = [
   {
     title: 'Draw Turntable - 抽籤抽籤 (iOS)',
     cssClass: 'drawTurntable',
-    info: '練習使用 React Native Expo 開發 App 並上架到 App Store 和 Google Play，是很方便的抽籤小工具',
+    info: '練習使用 React Native Expo 開發 App 並上架到 App Store 和 Google Play，是很方便的抽籤小工具～ 另外也有 Android 版本，請搜尋「Draw Turntable - 抽籤抽籤」',
     url: 'https://apps.apple.com/us/app/draw-turntable-%E6%8A%BD%E7%B1%A4%E6%8A%BD%E7%B1%A4/id6446946674',
   },
   {
