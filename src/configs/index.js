@@ -25,6 +25,7 @@ export const experience = [
     works: [
       '開發及維護使用 Vue 2、Vue 3 及 Laravel 後端框架結合的產品專案(Cheers快樂工作人、創新學院)',
       '維護使用 React 的產品專案(天下學習)',
+      '使用 Vue 3 進行 IT 內部系統開發',
       '使用 D3.js 協助開發策展網頁動態圖表',
       '開發UI/功能元件，串接後端API，修改維護網頁內容，互動設計，依照規格書開發產品',
       '操作 Google Tag Manager 埋碼',
@@ -84,11 +85,14 @@ export const tools = [
     type: 'Development',
     names: [
       'HTML / Pug',
-      'CSS / Sass / Scss',
+      'CSS / Sass / Scss / Tailwind',
       'JavaScript / TypeScript / jQuery',
       'React / Redux / React Hook',
+      'React Native Expo / EAS Build',
+      'Vue2 / Vue3 / Vuex',
       'Angular / Ionic',
-      'Webpack / Azure DevOps / git',
+      'Webpack / Vite',
+      'Azure DevOps / git',
     ],
   },
 ];
